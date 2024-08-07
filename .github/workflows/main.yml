@@ -1,0 +1,12 @@
+name: Scheduling a workflow
+on: 
+  schedule: 
+    - cron: '15 7 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run a script
+        run: echo "SKy is here!"
